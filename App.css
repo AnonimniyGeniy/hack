@@ -1,0 +1,129 @@
+.main {
+  background: linear-gradient(180deg, yellow, orange);
+
+	background-size: 400% 400%;
+
+	animation: gradient 15s ease infinite;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.VovaEblan {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  font-size: 100px;
+  margin: 5px 5px 5px 5px;
+  color: rgb(226, 157, 9);
+  text-shadow:
+    0 0 1px rgb(240, 177, 6),
+    0 0 2px rgb(240, 177, 6),
+    0 0 5px rgb(240, 177, 6),
+    0 0 11px rgb(233, 236, 9),
+    0 0 20px rgb(233, 236, 9),
+    0 0 30px rgb(233, 236, 9),
+    0 0 55px black,
+    0 0 80px black;
+}
+.Graph{
+  display: block;
+  float: left;
+  width: 50%;
+  height: 50%;
+  padding: 5px;
+  border: solid 1px rgb(243, 227, 8);
+  border-radius: 1cm;
+  margin: 5px 55px 5px 5px;  
+  box-shadow: 
+    0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem orange,
+    0 0 .8rem orange,
+    0 0 1rem orange,
+    inset 0 0 1.3rem orange;
+}
+.input{
+  display: flex;  
+  margin: 55px 55px 55px 55px; 
+  -webkit-appearance: none;  /* Переопределение стилей CSS по умолчанию */
+  appearance: none;
+  width: 30%; /* Полная ширина */
+  height: 25px; /* Заданная высота */
+  background: #e4ac14; /* Серый фон */
+  outline: none; /* Удалить контур */
+  opacity: 0.6; /* Установите прозрачность (для эффектов наведения мыши при наведении курсора) */
+  -webkit-transition: .2s; /* 0.2 секундный переход при наведении курсора */
+  transition: opacity .2s;
+  border: solid 1px rgb(243, 227, 8);
+  border-radius: 1cm; 
+  box-shadow: 
+    0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem orange,
+    0 0 .8rem orange,
+    0 0 1rem orange,
+    inset 0 0 1.3rem orange;   
+
+}
+
+.input:hover {
+  opacity: 1; /* Полностью отображается при наведении курсора мыши */
+}
+
+.input::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Переопределить внешний вид по умолчанию */
+  appearance: none;
+  width: 25px; /* Установите определенную ширину обработчика ползунка */
+  height: 25px; /* Высота обработчика ползунка */
+  background: #d8db07; /* Зеленый фон */
+  cursor: pointer; /* Курсор при наведении */
+}
+
+.input::-moz-range-thumb {
+  width: 25px; /* Установите определенную ширину обработчика ползунка */
+  height: 25px; /* Высота обработчика подзунка */
+  background: yellow; /* Зеленый фон */
+  cursor: pointer; /* Курсор при наведении */
+}
+.conv{
+  display: block;
+  float: left;
+  width: 50%;
+  height: 50%;
+  padding: 5px;
+  border: solid 1px rgb(243, 227, 8);
+  border-radius: 1cm;
+  margin: 5px 55px 5px 5px;  
+  box-shadow: 
+    0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem orange,
+    0 0 .8rem orange,
+    0 0 1rem orange,
+    inset 0 0 1.3rem orange;  
+}
+.canvas{
+  border: 1px solid black;
+  float: left;
+  display: block;
+  padding-left: 10cm;
+  margin-top: 40px;
+  
+
+
+}
+@keyframes gradient {
+
+	0% {
+		background-position: 50% 0%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 50% 0%;
+	}
+
+}
