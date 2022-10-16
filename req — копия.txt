@@ -1,0 +1,8 @@
+opencv-python
+numpy
+flask
+requests
+torch
+torchvision
+transforms
+sgmllib3k
